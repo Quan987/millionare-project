@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $_SESSION['user_auth'] = '';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +20,12 @@
         <h1>Who wants to be a Millionaire!</h1>
         <h2> Login Here</h2> 
         <div> 
-            <form action="./submit-login.php" method="post" name="Login_Form">
+            <form action="./login-submit.php" method="POST">
                 <strong> <label for = "username"> Username: </label> </strong> 
                 <input type = "text" name = "username" required=""> <br> <br>
                 
                 <strong> <label for = "password"> Password: </label>  </strong> 
-                <input type = "text" name = "password" required = ""> <br><br> 
+                <input type = "password" name = "password" required = ""> <br><br> 
                 
                 <input type = "submit" value= "Submit" > <br><br> 
                 

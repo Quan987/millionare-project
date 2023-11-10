@@ -18,3 +18,4 @@ function add_user($user) {
     $user = implode(":", $user) . "\n";
     file_put_contents($file, $user, FILE_APPEND);
 }
+

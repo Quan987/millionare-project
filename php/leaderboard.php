@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +25,7 @@
 		</tr>
 		<!-- Implement leaderboard -->
 	</table> 
-    <h2> <a href = "./index.php">Go to Main Page</a> </h2> 
+    <h2> <a href = "./session-destroy.php">Go to Main Page</a> </h2> 
 </div> 
 </body>
 </html>
