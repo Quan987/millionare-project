@@ -17,22 +17,11 @@
 
 
         // Demo for add_user()
-        $new_user = array(
-            "firstname" => "Minh",
-            "lastname" => "Tran",
-            "email" => "tranminh@gmail.com",
-            "password" => "1111"
-        );
-        // add_user() is called
-        add_user($new_user);
-
-        // The file after adding new user:
-        echo "After adding new user", "<br>";
-        echo "<pre>";
-        print_r(fileGetUser());
-        echo "</pre>";
-
-        // Remember to delete the demo add user after you use it!
+       $new_user = ["alex", "Xander", "alex@gmail.com", "1223"];
+       add_user($new_user);
+       echo "<pre>";
+       print_r(fileGetUser());
+       echo "</pre>";
     ?>
 </body>
 </html>
