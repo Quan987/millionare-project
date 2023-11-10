@@ -20,6 +20,7 @@ if (is_wrong($_COOKIE["current"])) {
     header("Location: ./leaderboard.php");
 }
 else {
+    setcookie("point", $_COOKIE["point"] + 1);
     header("Location: ./question.php");
 }
 
