@@ -1,12 +1,10 @@
 <?php 
-	$users = file("data.txt"); 
+	$users = file("db.txt"); 
 	$userInfo = array(); 
 	$userScore = array(); 
 	
-	$name;
-	$score; 
-	$leaderboardCount = 0; 
-	$length = 5; 
+	$count = 0; 
+	$length = 10; 
 	
 	foreach($users as $u) {
 		$userInfo[] = explode(",", $u); 
@@ -22,7 +20,7 @@
 <head>
 <meta charset="utf-8">
 <title>LEADERBOARD: Who Wants To Be A Millionaire!</title>
-<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body>
 <div id = "mainarea"> 
@@ -39,22 +37,28 @@
 		</tr>
 		<?php 
 			foreach($userScore as $key => $value) {
-				$leaderboardCount++; 
-				echo " 
+				$count++; ?> 
+				 
 				<tr> 
-					<td class = name>$leaderboardCount </td>
-					<td class = rank> $key </td> 
-					<td c;ass = score> $value </td>
-				</tr>"; 
-				if($leaderboardCount == $length) {
+					<td > <?= $count ?></td>
+					<td > <?= $key ?> </td> 
+					<td > <?= $value ?> </td>
+				</tr>; 
+			<?php if($count == $length) {
 					break; 
 				}
 			}
 		?>
 	</table> 
 	<div> 
-		<button onclick = "document.location = 'homepage.php'">Try Again</button> 
-		<button onclick = "document.location = 'logout.php'">Log Out </button> 
+		<div class = "nav"> 
+				<a href = "./index.php" class = "box">
+				Go to Main Page</a> 
+				
+				<a href = "logout.php" class = "box"> 
+				Log Out </a> 
+				
+		</div>
 	</div>
 </div> 
 </body>
