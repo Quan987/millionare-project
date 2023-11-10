@@ -12,7 +12,7 @@
 			<img src = "../img/logo.png" alt = "Logo"> 
 		</div> 
 			<h1>Who wants to be a Millionaire!</h1>
-			<p> Welcome to "Who wants to be a Millionaire"!</p> 
+			<p> Welcome to "Who wants to be a Millionaire!"</p> 
 			<br> <br> 
 			<div class = "nav"> 
 				<a href = "./register.php" class = "box"> 
