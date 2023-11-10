@@ -6,7 +6,7 @@ function getAnswer($num) {
     return explode("%", $questions[$num])[5];
 }
 function is_wrong($questionNumber) {
-    return $_POST != getAnswer($questionNumber);
+    return $_POST["answer"] != getAnswer($questionNumber);
 }
 if ($_COOKIE["current"] == -1) {
     //user is not in a game
