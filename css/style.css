@@ -58,6 +58,7 @@ a:hover {
   padding: 14px 20px;
   text-decoration: none;
   font-size: 16pt;
+  
 }
 .nav a:hover {
   background-color: #87cefa;
@@ -114,4 +115,49 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
   background-color: snow;
+}
+#winner {
+    position: relative;
+    width: 40%;
+    animation: winner-flash 1s infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes winner-flash{
+	from {width: 40%;} 
+	to {width: 50%;}
+}
+#loser{ 
+	position: relative;
+    width: 60%;
+    animation: loser-flash 0.8s infinite;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes loser-flash{
+	70%{
+		opacity: 100%; 
+	}
+	100%{
+		opacity: 40%; 
+	}
+}
+
+@media screen and (max-width: 800px) {
+  #mainarea {
+    float: none;
+	
+    width: 100%;
+	
+  }
+  .nav{
+	  display: block;
+	  
+	  width: 75%; 
+	  margin-left: auto; 
+	  margin-right: auto;    
+  }
+  .nav a{
+	  display: block; 
+	   
+  }
 }

@@ -1,6 +1,6 @@
 <?php
 	session_start();
-
+	$_SESSION['current'] = 0;
 ?>
 
 
@@ -24,7 +24,7 @@
 					of the questions correctly in order to win 1 million dollars. </p> 
 			<br> <br> 
 			<div class = "nav"> 
-				<a href = "questions/question1.php" class = "box"> 
+				<a href = "questions.php" class = "box"> 
 				Questions </a> 
 				<a href = "./leaderboard.php" class= "box">
 				Leaderboard </a> 
