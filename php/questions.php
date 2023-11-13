@@ -39,7 +39,7 @@ form div
 	<?php
 		//$_SESSION['current'] or point whichever works start with 0
 		//Assumption on the question file, question in format "question,a,b,c,d,correct answer"
-		if($_SESSION['current'] < 0 || $_SESSION['current'] > 15 || $_SESSION["current"] == null)
+		if($_SESSION['current'] < 0 || $_SESSION['current'] > 15 || $_SESSION['current'] == null)
 		{
 			header("Location: ./index.php");
 		}
