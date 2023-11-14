@@ -1,9 +1,9 @@
 <?php session_start();
 $answer = $_POST['answer'];
 $file = file("../database/q.txt");
-$fileData = $file[$_SESSION['current']];
+$fileData = $file[$_SESSION['current_question']];
 $fileData = explode("%", $fileData);
-$correctAns = $fileData[5];
+$correctAns = $fileData[6];
 if ($_SESSION['current'] == -1 || $_SESSION['current'] == null) {
     //user is not in a game
     header("Location: ../php/index.php");
