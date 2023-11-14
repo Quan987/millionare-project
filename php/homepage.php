@@ -1,7 +1,8 @@
 <?php
-	session_start();
-	$_SESSION['current'] = 0;
+	session_start(); 
+	$_SESSION['current'] = '0';
 ?>
+
 
 
 <!DOCTYPE html>
