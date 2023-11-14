@@ -1,7 +1,8 @@
 <?php
-	session_start();
-
+	session_start(); 
+	$_SESSION['current'] = '0';
 ?>
+
 
 
 <!DOCTYPE html>
@@ -24,11 +25,11 @@
 					of the questions correctly in order to win 1 million dollars. </p> 
 			<br> <br> 
 			<div class = "nav"> 
-				<a href = "questions/question1.php" class = "box"> 
+				<a href = "../php/questions.php" class = "box"> 
 				Questions </a> 
-				<a href = "./leaderboard.php" class= "box">
+				<a href = "../php/leaderboard.php" class= "box">
 				Leaderboard </a> 
-				<a href = "./logout.php" class = "box"> 
+				<a href = "../php/logout.php" class = "box"> 
 				Log Out </a> 		
 		</div>
 	</div> 
