@@ -21,8 +21,8 @@
                     break;
                 }
             }
-            if (!$user_exist) {
-                $_SESSION['error'] = 'User have not register! <br><br> Please registered!';
+            if (!isset($user_exist)) {
+                $_SESSION['error'] = 'You have not registered! <br><br> Please register!';
                 header('Location: ./errorPage.php');
                 exit();
             } else {
