@@ -15,7 +15,7 @@
             // Check if user exist already
             $fileArr = fileGetUser();
             foreach ($fileArr as $value) {
-                if ($value[2] == $return_user[0] && $value[3] == $return_user[1]) {
+                if ($value[2] == $return_user[0] && trim($value[3]) == trim($return_user[1])) {
                     $_SESSION['user_auth'] = "$value[0] $value[1]";
                     $user_exist = true;
                     break;
